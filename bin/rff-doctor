@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+/* jshint multistr:true */
+'use strict';
+
+var doctor = require('../');
+var pkg = require('../package.json');
+
+var args = process.argv.slice(2);
+var usage = pkg.description + '.\n\n\
+Usage:\n\
+  rff-doctor\n\n\
+Options:\n\
+  -h, --help        Display command usage and exit.\n\
+  -v, --version     Display version and exit.';
+
+if (args.length !== 0) {
+  switch (args[0]) {
+    case '-v':
+    case '--version':
+      console.log(pkg.version);
+      break;
+    case '-h':
+    case '--help':
+      console.log(usage);
+      break;
+    default:
+      console.log('Error: Invalid Option\n');
+      console.log(usage);
+  }
+  return;
+}
+
+doctor.run();

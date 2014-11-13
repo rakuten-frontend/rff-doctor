@@ -4,9 +4,7 @@
 
 ![rff-doctor](resources/rff-doctor.png)
 
-<p style="text-align:right">
-  <small><a href="http://www.freepik.com/free-photos-vectors/vintage" target="_blank">Vintage vector designed by Freepik</a></small>
-</p>
+<a href="http://www.freepik.com/free-photos-vectors/vintage" target="_blank">Vintage vector designed by Freepik</a>
 
 ## Installation
 ```shell

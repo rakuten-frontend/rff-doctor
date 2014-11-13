@@ -1,6 +1,6 @@
 {
   "name": "rff-doctor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Verify system configuration for using RFF components",
   "author": {
     "name": "Rakuten, Inc."

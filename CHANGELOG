@@ -1,3 +1,8 @@
+v0.2.0:
+  date: 2014/11/13
+  changes:
+    - Release as open source.
+    - Update dependencies.
 v0.1.0:
   date: 2014/06/26
   changes:

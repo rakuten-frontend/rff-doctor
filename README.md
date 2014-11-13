@@ -8,7 +8,7 @@ $ npm install -g rff-doctor
 ```
 
 ## Usage
-```
+```shell
 $ rff-doctor
 ```
 
@@ -27,7 +27,7 @@ doctor.run(function (error, results) {
   //   Execution error. This is different from the warning of doctor.
   //
   // results:
-  //   Array of objects. Each object has the following values.
+  //   Array of objects.
   //   [{
   //     name:         Name of test
   //     status:       'ok', 'ng' or 'skipped'

@@ -1,6 +1,6 @@
 # rff-doctor [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url]
 
-> Verify system configuration for using RFF components.
+> Verify system configuration for using Yeoman, Grunt and Bower.
 
 ![rff-doctor](resources/rff-doctor.png)
 

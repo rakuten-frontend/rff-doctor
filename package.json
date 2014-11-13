@@ -19,7 +19,15 @@
   "bugs": {
     "url": "https://github.com/rakuten-frontend/rff-doctor/issues"
   },
-  "keywords": [],
+  "keywords": [
+    "yeoman",
+    "grunt",
+    "bower",
+    "cli",
+    "env",
+    "environment",
+    "doctor"
+  ],
   "engines": {
     "node": ">=0.10.0"
   },

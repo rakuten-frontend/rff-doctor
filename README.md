@@ -1,4 +1,4 @@
-# rff-doctor
+# rff-doctor [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url]
 
 > Verify system configuration for using RFF components.
 
@@ -40,3 +40,10 @@ doctor.run(function (error, results) {
 
 ## License
 Copyright (c) 2014 Rakuten, Inc. Licensed under the [MIT License](LICENSE).
+
+[npm-image]: https://img.shields.io/npm/v/rff-doctor.svg?style=flat
+[npm-url]: https://www.npmjs.org/package/rff-doctor
+[travis-image]: https://img.shields.io/travis/rakuten-frontend/rff-doctor/master.svg?style=flat
+[travis-url]: https://travis-ci.org/rakuten-frontend/rff-doctor
+[deps-image]: http://img.shields.io/david/rakuten-frontend/rff-doctor.svg?style=flat
+[deps-url]: https://david-dm.org/rakuten-frontend/rff-doctor

@@ -24,6 +24,9 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "test": "grunt test --verbose"
+  },
   "files": [
     "index.js",
     "bin",

@@ -5,6 +5,7 @@ var _ = require('lodash');
 var Q = require('q');
 var which = require('which');
 var chalk = require('chalk');
+var figures = require('figures');
 var semver = require('semver');
 
 module.exports = {
@@ -42,13 +43,13 @@ module.exports = {
     error = error || null;
     switch (status) {
       case 'ok':
-        mark = chalk.green('✓');
+        mark = chalk.green(figures.tick);
         break;
       case 'ng':
-        mark = chalk.red('×');
+        mark = chalk.red(figures.cross);
         break;
       case 'skipped':
-        mark = chalk.red('−');
+        mark = chalk.red(figures.line);
         break;
     }
     this.results.push({name: name, status: status, description: description, hint: hint, error: error});

@@ -53,14 +53,19 @@ module.exports = {
         break;
     }
     this.results.push({name: name, status: status, description: description, hint: hint, error: error});
-    console.log('[' + mark + '] ' + description);
+    this.print(mark + ' ' + description, ' ');
     if (error) {
-      console.log(chalk.gray(error.toString().trim()));
+      this.print(chalk.red(error.toString().trim()), '     ');
     }
     if (hint !== '') {
-      console.log('-----------------------------------------------------------\n' +
-        hint + '\n-----------------------------------------------------------');
+      this.print(chalk.gray(hint), '     ');
     }
+  },
+
+  print: function (string, indent) {
+    indent = indent || '';
+    string = indent + string.replace(/\n/g, '\n' + indent);
+    console.log(string);
   },
 
   showResults: function () {
@@ -95,7 +100,8 @@ module.exports = {
           name,
           'ng',
           'Node.js is not installed correctly.',
-          'You can install Node.js from here.\nhttp://nodejs.org/',
+          'You can install Node.js from here.\n' +
+          'http://nodejs.org/',
            error
         );
         d.resolve();
@@ -107,7 +113,9 @@ module.exports = {
           name,
           'ng',
           'Your Node.js is outdated.',
-          'You have installed Node.js v' + installedVer + '.\nUpgrade it to v0.10.0 or higher.\nhttp://nodejs.org/'
+          'You have installed Node.js v' + installedVer + '.\n' +
+          'Upgrade it to v0.10.0 or higher.\n' +
+          'http://nodejs.org/'
         );
         d.resolve();
         return;
@@ -127,7 +135,9 @@ module.exports = {
           name,
           'ng',
           'Git is not found on your computer.',
-          '1. Install Git.\n   http://git-scm.com/\n2. Set the installation directory to PATH if you haven\'t.',
+          '1. Install Git.\n' +
+          '   http://git-scm.com/\n' +
+          '2. Set the installation directory to PATH if you haven\'t.',
           error
         );
         d.resolve();
@@ -153,7 +163,9 @@ module.exports = {
           name,
           'ng',
           'Failed to connect to "git://github.com".',
-          '1. Check the Internet connection.\n2. If you are using HTTP proxy, try this command:\n     git config --global url."https://".insteadOf git://',
+          '1. Check the Internet connection.\n' +
+          '2. If you are using HTTP proxy, try this command:\n' +
+          '     $ git config --global url."https://".insteadOf git://',
           error
         );
         d.resolve();
@@ -174,7 +186,8 @@ module.exports = {
           name,
           'ng',
           'Yeoman is not found on your computer.',
-          'Install Yeoman using npm command:\n  npm install -g yo',
+          'Install Yeoman using npm command:\n' +
+          '  $ npm install -g yo',
           error
         );
         d.resolve();
@@ -195,7 +208,8 @@ module.exports = {
           name,
           'ng',
           'Grunt is not found on your computer.',
-          'Install Grunt CLI using npm command:\n  npm install -g grunt-cli',
+          'Install Grunt CLI using npm command:\n' +
+          '  $ npm install -g grunt-cli',
           error
         );
         d.resolve();
@@ -221,7 +235,8 @@ module.exports = {
           name,
           'ng',
           'Your Grunt is not installed correctly.',
-          'Install Grunt CLI using npm command:\n  npm install -g grunt-cli',
+          'Install Grunt CLI using npm command:\n' +
+          '  $ npm install -g grunt-cli',
           error
         );
         d.resolve();
@@ -232,7 +247,11 @@ module.exports = {
           name,
           'ng',
           'grunt-cli is not found.',
-          'Your Grunt might be old version.\nIf you have installed Grunt ver. -0.3, run:\n  npm uninstall -g grunt\n\nAnd then, install Grunt CLI:\n  npm install -g grunt-cli'
+          'Your Grunt might be old version.\n' +
+          'If you have installed Grunt ver. -0.3, run:\n' +
+          '  $ npm uninstall -g grunt\n\n' +
+          'And then, install Grunt CLI:\n' +
+          '  $ npm install -g grunt-cli'
         );
       }
       this.log(name, 'ok', 'You can use Grunt CLI.');
@@ -250,7 +269,8 @@ module.exports = {
           name,
           'ng',
           'Bower is not found on your computer.',
-          'Install Bower using npm command:\n  npm install -g bower',
+          'Install Bower using npm command:\n' +
+          '  $ npm install -g bower',
           error
         );
         d.resolve();
@@ -271,7 +291,9 @@ module.exports = {
           name,
           'ng',
           'Ruby is not found on your computer.',
-          '1. Install Ruby.\n   https://www.ruby-lang.org/\n2. Set the installation directory to PATH if you haven\'t.',
+          '1. Install Ruby.\n' +
+          '   https://www.ruby-lang.org/\n' +
+          '2. Set the installation directory to PATH if you haven\'t.',
           error
         );
         d.resolve();
@@ -297,7 +319,9 @@ module.exports = {
           name,
           'ng',
           'Sass is not found on your computer.',
-          '1. Install Sass using gem:\n     gem install sass\n2. Set the installation directory to PATH if you haven\'t.',
+          '1. Install Sass using gem:\n' +
+          '     $ gem install sass\n' +
+          '2. Set the installation directory to PATH if you haven\'t.',
           error
         );
         d.resolve();

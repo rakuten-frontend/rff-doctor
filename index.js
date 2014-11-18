@@ -73,7 +73,7 @@ module.exports = {
     var skipCount = _.filter(this.results, {status: 'skipped'}).length;
     var warningMessage = '';
     if (warningCount === 0) {
-      console.log(chalk.green('\nYou are ready to use RFF!'));
+      console.log(chalk.green('\nYour system is ready!'));
       return;
     }
     warningMessage = '\nDetected ' + warningCount + ((warningCount === 1) ? ' warning.' : ' warnings.');

@@ -1,6 +1,6 @@
 {
   "name": "rff-doctor",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Verify system configuration for using Yeoman, Grunt and Bower",
   "author": {
     "name": "Rakuten, Inc."

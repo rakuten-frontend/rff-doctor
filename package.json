@@ -38,7 +38,7 @@
     "index.js",
     "bin",
     "LICENSE",
-    "CHANGELOG"
+    "CHANGELOG.md"
   ],
   "main": "index.js",
   "bin": {

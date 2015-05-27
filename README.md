@@ -1,10 +1,14 @@
-# rff-doctor [![NPM Version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url]
+# rff-doctor
 
-> Verify system configuration for using Yeoman, Grunt and Bower.
+> Verify system configuration for using Yeoman, Grunt and Bower
+
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][deps-image]][deps-url]
 
 ![rff-doctor](resources/rff-doctor.png)
 
-<a href="http://www.freepik.com/free-photos-vectors/vintage" target="_blank">Vintage vector designed by Freepik</a>
+Illustration: <a href="http://www.freepik.com/free-photos-vectors/vintage" target="_blank">Vintage vector designed by Freepik</a>
 
 ## Installation
 ```shell
@@ -43,11 +47,11 @@ doctor.run(function (error, results) {
 ```
 
 ## License
-Copyright (c) 2014 Rakuten, Inc. Licensed under the [MIT License](LICENSE).
+Copyright (c) 2014-2015 Rakuten, Inc. Licensed under the [MIT License](LICENSE).
 
-[npm-image]: https://img.shields.io/npm/v/rff-doctor.svg?style=flat
+[npm-image]: https://img.shields.io/npm/v/rff-doctor.svg
 [npm-url]: https://www.npmjs.org/package/rff-doctor
-[travis-image]: https://img.shields.io/travis/rakuten-frontend/rff-doctor/master.svg?style=flat
+[travis-image]: https://img.shields.io/travis/rakuten-frontend/rff-doctor/master.svg
 [travis-url]: https://travis-ci.org/rakuten-frontend/rff-doctor
-[deps-image]: http://img.shields.io/david/rakuten-frontend/rff-doctor.svg?style=flat
+[deps-image]: http://img.shields.io/david/rakuten-frontend/rff-doctor.svg
 [deps-url]: https://david-dm.org/rakuten-frontend/rff-doctor

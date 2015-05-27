@@ -37,7 +37,8 @@
   "files": [
     "index.js",
     "bin",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG"
   ],
   "main": "index.js",
   "bin": {

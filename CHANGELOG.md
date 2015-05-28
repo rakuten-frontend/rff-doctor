@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.3 (2015-05-28)
+- Update dependencies.
+
 ## 0.2.2 (2014-11-19)
 - Improve report style.
 - Update dependencies.
